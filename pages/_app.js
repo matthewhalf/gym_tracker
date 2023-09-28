@@ -20,10 +20,10 @@ const theme = createTheme({
   },
 });
 
-function MyApp({ Component, PageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <Component {...PageProps} />
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }
