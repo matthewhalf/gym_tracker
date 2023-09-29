@@ -97,7 +97,7 @@ const TrainingModal = ({ open, onClose }) => {
                     <div>
                         <Typography className='text-l'>Nome della scheda di allenamento</Typography>
                         <TextField variant="standard" label="Nome scheda" value={trainingName} onChange={e => setTrainingName(e.target.value)} className='mt-4' />
-                        <Button onClick={handleNext} className='mt-16 ml-10 text-blue-500 bg-[#f5f5f5] rounded-xl text-[14px] font-bold capitalize'>Avanti</Button>
+                        <button onClick={handleNext} className='mt-16 ml-10 text-blue-500 bg-[#f5f5f5] rounded-xl text-[14px] font-bold capitalize'>Avanti</button>
                     </div>
                 )}
                 {step === 2 && (
