@@ -97,7 +97,7 @@ const TrainingModal = ({ open, onClose }) => {
                     <div>
                         <Typography className='text-l'>Nome della scheda di allenamento</Typography>
                         <TextField variant="standard" label="Nome scheda" value={trainingName} onChange={e => setTrainingName(e.target.value)} className='mt-4' />
-                        <button onClick={handleNext} className='mt-16 px-4 py-2 ml-10  text-blue-500 bg-[#f5f5f5] rounded-xl text-[14px] font-bold capitalize'>Avanti</button>
+                        <button onClick={handleNext} className='mt-8 px-4 py-2 ml-8  text-blue-500 bg-[#f5f5f5] rounded-xl text-[14px] font-bold capitalize'>Avanti</button>
                     </div>
                 )}
                 {step === 2 && (
@@ -115,7 +115,7 @@ const TrainingModal = ({ open, onClose }) => {
                         ))}
             
                         <div>
-                                <Typography className='text-l mt-8 font-bold'>Aggiungi esercizi alla tua scheda</Typography>
+                                <h4 className='text-l mt-8 font-bold'>Aggiungi esercizi alla tua scheda</h4>
                                 
                                 <TextField 
                                     label="Esercizio" 
@@ -151,16 +151,16 @@ const TrainingModal = ({ open, onClose }) => {
                                 {currentExercises.map((exercise, idx) => (
                                     <li key={idx} className='text-[14px] flex items-center gap-2' >
                                         {exercise.name} - {exercise.repetitions} - {exercise.recovery} - {exercise.weight} kg
-                                        <Button className=' text-red-600 text-[12px] font-bold capitalize' onClick={() => removeExercise(idx)}>Rimuovi</Button>
+                                        <button className=' text-red-600 text-[12px] font-bold capitalize' onClick={() => removeExercise(idx)}>Rimuovi</button>
                                     </li>
                                 ))}
                             </ul>
                         </div>
 
                     <div className='flex justify-between'>
-                        <Button onClick={handlePrev} className='mt-8 text-blue-500'><ArrowBackIosIcon fontSize='medium' /></Button>
-                        <Button onClick={handleNext} className='mt-8 text-blue-500 text-[12px] font-bold capitalize'>Aggiungi allenamento</Button>
-                        <Button onClick={saveCompleteTraining} className='mt-8 text-blue-500 text-[12px] font-bold capitalize'>Salva Scheda</Button>
+                        <button onClick={handlePrev} className='mt-8 text-blue-500'><ArrowBackIosIcon fontSize='medium' /></button>
+                        <button onClick={handleNext} className='mt-8 text-blue-500 text-[12px] font-bold capitalize'>Aggiungi allenamento</button>
+                        <button onClick={saveCompleteTraining} className='mt-8 text-blue-500 text-[12px] font-bold capitalize'>Salva Scheda</button>
                     </div>
                 </div>
                 )}
