@@ -146,7 +146,7 @@ const TrainingModal = ({ open, onClose }) => {
                                     variant="standard"
                                 />
 
-                                <Button onClick={addExercise} className='mt-8 text-blue-500 bg-[#f5f5f5] text-[14px] font-bold capitalize'>Aggiungi Esercizio</Button>
+                                <button onClick={addExercise} className='mt-8 text-blue-500 bg-[#f5f5f5] text-[14px] font-bold capitalize'>Aggiungi Esercizio</button>
                             <ul className='bg-[#f5f5f5] p-2 rounded-lg mt-4'>
                                 {currentExercises.map((exercise, idx) => (
                                     <li key={idx} className='text-[14px] flex items-center gap-2' >
