@@ -79,9 +79,10 @@ const TrainingCardDisplay = () => {
 
     return (
         <div>
-            <Typography className='capitalize m-6 font-bold'>{trainingCard.trainingName}</Typography>
+            <h6 className='capitalize m-6 font-bold'>{trainingCard.trainingName}</h6>
             {trainingCard.workouts.map((workout, wIdx) => (
                 <div key={wIdx} className='bg-white shadow-lg p-2 text-center m-6 overflow-y-auto rounded-lg '>
+                    <Typography className='bg-black text-white rounded-lg'>Allenamento: {workout.name}</Typography>
                     <Table>
                         <TableHead>
                             <TableRow>
