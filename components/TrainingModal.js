@@ -97,7 +97,7 @@ const TrainingModal = ({ open, onClose }) => {
                     <div>
                         <Typography className='text-l'>Nome della scheda di allenamento</Typography>
                         <TextField variant="standard" label="Nome scheda" value={trainingName} onChange={e => setTrainingName(e.target.value)} className='mt-4' />
-                        <button onClick={handleNext} className='mt-8 px-4 py-2 ml-8  text-blue-500 bg-[#f5f5f5] rounded-xl text-[14px] font-bold capitalize'>Avanti</button>
+                        <button onClick={handleNext} className='mt-8 px-4 py-2 ml-5  text-blue-500 bg-[#f5f5f5] rounded-xl text-[14px] font-bold capitalize'>Avanti</button>
                     </div>
                 )}
                 {step === 2 && (
@@ -146,7 +146,7 @@ const TrainingModal = ({ open, onClose }) => {
                                     variant="standard"
                                 />
 
-                                <button onClick={addExercise} className='mt-8 text-blue-500 bg-[#f5f5f5] text-[14px] font-bold capitalize'>Aggiungi Esercizio</button>
+                                <button onClick={addExercise} className='mt-8 px-4 py-2 text-blue-500 bg-[#f5f5f5] text-[14px] font-bold capitalize'>Aggiungi Esercizio</button>
                             <ul className='bg-[#f5f5f5] p-2 rounded-lg mt-4'>
                                 {currentExercises.map((exercise, idx) => (
                                     <li key={idx} className='text-[14px] flex items-center gap-2' >
@@ -159,8 +159,8 @@ const TrainingModal = ({ open, onClose }) => {
 
                     <div className='flex justify-between'>
                         <button onClick={handlePrev} className='mt-8 text-blue-500'><ArrowBackIosIcon fontSize='medium' /></button>
-                        <button onClick={handleNext} className='mt-8 text-blue-500 text-[12px] font-bold capitalize'>Aggiungi allenamento</button>
-                        <button onClick={saveCompleteTraining} className='mt-8 text-blue-500 text-[12px] font-bold capitalize'>Salva Scheda</button>
+                        <button onClick={handleNext} className='mt-8 text-blue-500 text-[14px] font-bold capitalize'>Aggiungi allenamento</button>
+                        <button onClick={saveCompleteTraining} className='mt-8 text-blue-500 text-[14px] font-bold capitalize'>Salva Scheda</button>
                     </div>
                 </div>
                 )}
