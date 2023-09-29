@@ -1,5 +1,6 @@
-import '../styles/globals.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import '../styles/globals.css'
+
 
 const theme = createTheme({
   typography: {
