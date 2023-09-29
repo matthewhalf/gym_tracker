@@ -1,6 +1,6 @@
-import BottomAppbar from '@/components/BottomAppbar';
-import TrainingCardDisplay from '@/components/TrainingCardDisplay';
-import useCurrentUser from "@/hooks/useCurrentUser";
+import BottomAppbar from '../components/BottomAppbar';
+import TrainingCardDisplay from '../components/TrainingCardDisplay';
+import useCurrentUser from "../hooks/useCurrentUser";
 import { Typography } from '@mui/material';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 

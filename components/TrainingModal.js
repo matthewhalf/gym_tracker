@@ -4,8 +4,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import useCurrentUser from '@/hooks/useCurrentUser';
-import { saveTrainingCard } from '@/services/saveTrainingCard';
+import useCurrentUser from '../hooks/useCurrentUser';
+import { saveTrainingCard } from '../services/saveTrainingCard';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const TrainingModal = ({ open, onClose }) => {

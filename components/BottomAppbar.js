@@ -8,7 +8,7 @@ import { styled } from '@mui/material/styles';
 import { Fab } from '@mui/material';
 import TrainingModal from './TrainingModal';
 import LogoutIcon from '@mui/icons-material/Logout';
-import { signOut } from "@/services/auth";
+import { signOut } from "../services/auth";
 import { useRouter } from 'next/router';
 
 const BottomAppbar = () => {

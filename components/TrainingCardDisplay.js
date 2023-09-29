@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { firestore } from "@/lib/firebase"; // Importa la configurazione di Firebase
+import { firestore } from "../lib/firebase"; // Importa la configurazione di Firebase
 import { doc, getDoc, setDoc } from "firebase/firestore"; // Importa le funzioni necessarie da Firestore
-import useCurrentUser from '@/hooks/useCurrentUser'; // Importa l'hook useCurrentUser
+import useCurrentUser from '../hooks/useCurrentUser'; // Importa l'hook useCurrentUser
 import { Button, TextField, Table, TableBody, TableCell, TableHead, TableRow, Typography } from '@mui/material';
 
 
