@@ -115,7 +115,7 @@ const TrainingModal = ({ open, onClose }) => {
                         ))}
             
                         <div>
-                                <h4 className='text-l mt-8 font-bold'>Aggiungi esercizi alla tua scheda</h4>
+                                <Typography className='text-l mt-8 font-bold'>Aggiungi esercizi alla tua scheda</Typography>
                                 
                                 <TextField 
                                     label="Esercizio" 
