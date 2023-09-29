@@ -15,7 +15,7 @@ export default function Index() {
           {user ? (
             <>
             <div className='p-4 m-4 bg-gray-200 rounded-xl shadow-lg'>
-            <Typography className='text-[40px] font-bold'>Ciao, {user.displayName} <FitnessCenterIcon fontSize='small' /> </Typography>
+            <h1 className='text-[40px] font-bold'>Ciao, {user.displayName} <FitnessCenterIcon fontSize='small' /> </h1>
             <Typography className='font-bold text-[14px] mt-4'>Pronto per il tuo workout ?</Typography>
             </div>
             </>
